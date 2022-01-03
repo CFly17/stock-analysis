@@ -30,6 +30,7 @@ One might imagine that the near tenfold reduction in loops between original and 
 It would be of interest to expound on the above discussion and analyze time stamps at each step of the sub routine. For example, instead of merely starting and stopping the timers and the beginning and end of the code, we might add timers to the beginning and end of any given loop. For the sake of abstraction, we might even run this test on one or two tickers alone, to minimize computational noise that may occur between loops. 
 
 ## Summary 
+### Refactored Efficiency
 The refactored code performed much more efficiently than the orignal code. Noticeably, the refactored code also included formatting logic in its timing; yet still reduced computation time fourfold. This is likely in large part to our removing the nested for loop that looped all 3,000+ rows for every single ticker. Instaed, we opted to add one piece of logic -- two if-then statements to first confirm if we had arrived at the next ticker, and next to increment the ticker index -- to minimize the number of loops required over all 3,013 rows. 
 =======
 # stock-analysis
