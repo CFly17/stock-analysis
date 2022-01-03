@@ -1,5 +1,5 @@
-# kickstarter-analysis
-# Kickstarting with Excel
+<<<<<<< HEAD
+# stock-analysis
 
 ## Overview of Project
 This project seeks to provide valuable insights into the refactoring of a VBA Macro, a coded method or function within Excel. 
@@ -31,3 +31,6 @@ It would be of interest to expound on the above discussion and analyze time stam
 
 ## Summary 
 The refactored code performed much more efficiently than the orignal code. Noticeably, the refactored code also included formatting logic in its timing; yet still reduced computation time fourfold. This is likely in large part to our removing the nested for loop that looped all 3,000+ rows for every single ticker. Instaed, we opted to add one piece of logic -- two if-then statements to first confirm if we had arrived at the next ticker, and next to increment the ticker index -- to minimize the number of loops required over all 3,013 rows. 
+=======
+# stock-analysis
+>>>>>>> 586017758c3adcbb232e95d5f6c9566d5d45214d
